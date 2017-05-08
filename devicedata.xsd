@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="DeviceData" type="DeviceData"></xsd:element>
+    <xsd:complexType name="DeviceData">
+        <xsd:sequence>
+            <xsd:element name="detail" type="ContentType"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ContentType">
+    	<xsd:sequence>
+    		<xsd:element name="printLastState" type="xsd:string"></xsd:element>
+    		<xsd:element name="printCapabilities" type="xsd:string"></xsd:element>
+    		<xsd:element name="deviceUid" type="xsd:string"></xsd:element>
+    		<xsd:element name="physicalAddress" type="xsd:string"></xsd:element>
+    		<xsd:element name="deviceOpStatus" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceAppGardenId" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceLongitude" type="xsd:string"></xsd:element>
+            <xsd:element name="childrenDevices" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceCoordY" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceCoordX" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceName" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceAltitude" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceCoordZ" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceId" type="xsd:string"></xsd:element>
+            <xsd:element name="printActionLinks" type="xsd:string"></xsd:element>
+            <xsd:element name="physNodeIDs" type="xsd:string"></xsd:element>
+            <xsd:element name="deviceLatitude" type="xsd:string"></xsd:element>
+            <xsd:element name="netIDs" type="xsd:string"></xsd:element>
+   	</xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
