@@ -1,0 +1,73 @@
+
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sycorwftaskui.controller.wf"
+	displayBlock="true">
+	<App>
+		<pages>
+			<Page showHeader="false" showFooter="true">
+				<content>
+					<GroupHeaderListItem id="__item3"/>
+					<ObjectHeader title="{/Alert/0/descr}" number="{/Alert/0/level}" intro="SAP Cloud Platform IoT Alert" introActive="true" titleActive="true"
+						id="__header0" backgroundDesign="Translucent" numberState="Error"/>
+					<Table noDataText="Drop column list items here and columns in the area above" id="__table0">
+						<items>
+							<ColumnListItem id="__item4">
+								<cells>
+									<Text text="ID" id="__text1"/>
+									<Text text="{/Alert/0/id}" id="__text2"/>
+								</cells>
+							</ColumnListItem>
+							<ColumnListItem id="__item5">
+								<cells>
+									<Text text="Time (UTC)" id="__text3"/>
+									<Text text="{/Alert/0/time}" id="__text4"/>
+								</cells>
+							</ColumnListItem>
+							<ColumnListItem id="__item6">
+								<cells>
+									<Text text="Reason" id="__text5"/>
+									<Text text="{/Alert/0/descr}" id="__text6"/>
+								</cells>
+							</ColumnListItem>
+							<ColumnListItem id="__item7">
+								<cells>
+									<Text text="Resource ID" id="__text7"/>
+									<Text text="{/Alert/0/resourceId}" id="__text8"/>
+								</cells>
+							</ColumnListItem>
+							<ColumnListItem id="__item8">
+								<cells>
+									<Text text="Node Type" id="__text9"/>
+									<Text text="{/Alert/0/resourceType}" id="__text10"/>
+								</cells>
+							</ColumnListItem>
+							<ColumnListItem id="__item9">
+								<cells>
+									<Text text="Alert Resolved" id="__text11"/>
+									<Text text="{/Alert/0/resolved}" id="__text12"/>
+								</cells>
+							</ColumnListItem>
+							<ColumnListItem id="__item10">
+								<cells>
+									<Text text="Alert Acked" id="__text13"/>
+									<Text text="{/Alert/0/acked}" id="__text14"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column id="__column0">
+								<header>
+									<Label text="Property" id="__label0"/>
+								</header>
+							</Column>
+							<Column id="__column1">
+								<header>
+									<Label text="Value" id="__label1"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
